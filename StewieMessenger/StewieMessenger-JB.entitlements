@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>K2B79VWGA3.de.tu-darmstadt.StewieMessenger</string>
+	<key>com.apple.developer.team-identifier</key>
+	<string>K2B79VWGA3</string>
+	<key>get-task-allow</key>
+	<true/>
+	<key>com.apple.private.accounts.allaccounts</key>
+	<true/>
+    <key>com.apple.accounts.inactive.fullaccess</key>
+    <true/>
+    <key>com.apple.authkit.client.internal</key>
+    <true/>
+    <key>com.apple.authkit.client.private</key>
+    <true/>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>$(AppIdentifierPrefix)de.tu-darmstadt.StewieMessenger</string>
+		<string>apple</string>
+        <string>searchpartyd-baa-fmna-group</string>
+	</array>
+	<key>platform-application</key>
+	<true/>
+	<key>com.apple.private.security.no-container</key>
+	<true/>
+	<key>com.apple.keystore.access-keychain-keys</key>
+	<true/>
+	<key>com.apple.icloud.searchpartyd.securelocations.access</key>
+	<true/>
+	<key>com.apple.keystore.sik.access</key>
+	<true/>
+	<key>com.apple.security.system-container</key>
+	<true/>
+	<key>com.apple.security.system-groups</key>
+	<array>
+		<string>systemgroup.com.apple.icloud.searchpartyd.sharedsettings</string>
+	</array>
+</dict>
+</plist>

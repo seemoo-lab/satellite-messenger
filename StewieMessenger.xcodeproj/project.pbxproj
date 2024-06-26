@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7832F3082C2C4DC200978EBC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832F3072C2C4DC200978EBC /* main.swift */; };
+		7832F30E2C2CAF5C00978EBC /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7832F30D2C2CAF5C00978EBC /* AppIcon.png */; };
+		7845E99B2C1051BC0052FD08 /* StewieMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E977A32BF7436E00CACC40 /* StewieMessengerApp.swift */; };
+		7845E99C2C1051BC0052FD08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E977A52BF7436E00CACC40 /* ContentView.swift */; };
+		7845E99D2C1051BC0052FD08 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECF53A2BF945E300DD92CF /* Messages.swift */; };
+		7845E99E2C1051BC0052FD08 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B2F222C0F4D52004538D7 /* TestView.swift */; };
+		7845E99F2C1051BC0052FD08 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E977A72BF7436E00CACC40 /* Item.swift */; };
+		7845E9A02C1051BC0052FD08 /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECF5232BF78B7200DD92CF /* MessageSender.swift */; };
+		7845E9A12C1051BC0052FD08 /* TokenFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E977B32BF7455900CACC40 /* TokenFetcher.swift */; };
+		7845E9A22C1051BC0052FD08 /* AppleFindMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E977B62BF7632100CACC40 /* AppleFindMyController.swift */; };
+		7845E9A32C1051BC0052FD08 /* FindMyFilesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E977B92BF7656400CACC40 /* FindMyFilesController.swift */; };
+		7845E9A42C1051D20052FD08 /* MessageSenderOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45ECF5282BF832C100DD92CF /* MessageSenderOC.m */; };
+		7845E9A52C1073350052FD08 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 78E977A92BF7436F00CACC40 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7832F3032C2C4DC200978EBC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		45ECF5232BF78B7200DD92CF /* MessageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
+		45ECF5262BF8191600DD92CF /* SPSecureLocationsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSecureLocationsManager.h; sourceTree = "<group>"; };
+		45ECF5272BF832C100DD92CF /* StewieMessenger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StewieMessenger-Bridging-Header.h"; sourceTree = "<group>"; };
+		45ECF5282BF832C100DD92CF /* MessageSenderOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSenderOC.m; sourceTree = "<group>"; };
+		45ECF52D2BF84CD700DD92CF /* SPOwner */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SPOwner; path = "../../Library/Developer/Xcode/iOS DeviceSupport/iPhone14,7 16.1.2 (20B110)/Symbols/System/Library/PrivateFrameworks/SPOwner.framework/SPOwner"; sourceTree = "<group>"; };
+		45ECF5332BF84D2400DD92CF /* SPOwner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SPOwner.framework; path = "../../Library/Developer/Xcode/iOS DeviceSupport/iPhone14,7 16.1.2 (20B110)/Symbols/System/Library/PrivateFrameworks/SPOwner.framework"; sourceTree = "<group>"; };
+		45ECF5372BF8527900DD92CF /* MessageSenderOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSenderOC.h; sourceTree = "<group>"; };
+		45ECF53A2BF945E300DD92CF /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		7832F3052C2C4DC200978EBC /* KeysExtractor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KeysExtractor; sourceTree = BUILT_PRODUCTS_DIR; };
+		7832F3072C2C4DC200978EBC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7832F30C2C2CAB5700978EBC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7832F30D2C2CAF5C00978EBC /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		783B2F222C0F4D52004538D7 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		78E977A02BF7436E00CACC40 /* StewieMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StewieMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E977A32BF7436E00CACC40 /* StewieMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StewieMessengerApp.swift; sourceTree = "<group>"; };
+		78E977A52BF7436E00CACC40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78E977A72BF7436E00CACC40 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		78E977A92BF7436F00CACC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78E977AC2BF7436F00CACC40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78E977B32BF7455900CACC40 /* TokenFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenFetcher.swift; sourceTree = "<group>"; };
+		78E977B52BF749F900CACC40 /* StewieMessenger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StewieMessenger.entitlements; sourceTree = "<group>"; };
+		78E977B62BF7632100CACC40 /* AppleFindMyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFindMyController.swift; sourceTree = "<group>"; };
+		78E977B82BF763A000CACC40 /* StewieMessenger-JB.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "StewieMessenger-JB.entitlements"; sourceTree = "<group>"; };
+		78E977B92BF7656400CACC40 /* FindMyFilesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyFilesController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7832F3022C2C4DC200978EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E9779D2BF7436E00CACC40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45ECF52C2BF84CD700DD92CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45ECF5332BF84D2400DD92CF /* SPOwner.framework */,
+				45ECF52D2BF84CD700DD92CF /* SPOwner */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7832F3062C2C4DC200978EBC /* KeysExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				7832F3072C2C4DC200978EBC /* main.swift */,
+			);
+			path = KeysExtractor;
+			sourceTree = "<group>";
+		};
+		78E977972BF7436E00CACC40 = {
+			isa = PBXGroup;
+			children = (
+				7832F30C2C2CAB5700978EBC /* README.md */,
+				7832F30D2C2CAF5C00978EBC /* AppIcon.png */,
+				78E977A22BF7436E00CACC40 /* StewieMessenger */,
+				7832F3062C2C4DC200978EBC /* KeysExtractor */,
+				78E977A12BF7436E00CACC40 /* Products */,
+				45ECF52C2BF84CD700DD92CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78E977A12BF7436E00CACC40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78E977A02BF7436E00CACC40 /* StewieMessenger.app */,
+				7832F3052C2C4DC200978EBC /* KeysExtractor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78E977A22BF7436E00CACC40 /* StewieMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				78E977B82BF763A000CACC40 /* StewieMessenger-JB.entitlements */,
+				78E977B52BF749F900CACC40 /* StewieMessenger.entitlements */,
+				45ECF5262BF8191600DD92CF /* SPSecureLocationsManager.h */,
+				78E977A32BF7436E00CACC40 /* StewieMessengerApp.swift */,
+				78E977A52BF7436E00CACC40 /* ContentView.swift */,
+				45ECF53A2BF945E300DD92CF /* Messages.swift */,
+				783B2F222C0F4D52004538D7 /* TestView.swift */,
+				78E977A72BF7436E00CACC40 /* Item.swift */,
+				45ECF5232BF78B7200DD92CF /* MessageSender.swift */,
+				78E977B32BF7455900CACC40 /* TokenFetcher.swift */,
+				78E977B62BF7632100CACC40 /* AppleFindMyController.swift */,
+				78E977B92BF7656400CACC40 /* FindMyFilesController.swift */,
+				78E977A92BF7436F00CACC40 /* Assets.xcassets */,
+				78E977AB2BF7436F00CACC40 /* Preview Content */,
+				45ECF5282BF832C100DD92CF /* MessageSenderOC.m */,
+				45ECF5372BF8527900DD92CF /* MessageSenderOC.h */,
+				45ECF5272BF832C100DD92CF /* StewieMessenger-Bridging-Header.h */,
+			);
+			path = StewieMessenger;
+			sourceTree = "<group>";
+		};
+		78E977AB2BF7436F00CACC40 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78E977AC2BF7436F00CACC40 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7832F3042C2C4DC200978EBC /* KeysExtractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7832F30B2C2C4DC200978EBC /* Build configuration list for PBXNativeTarget "KeysExtractor" */;
+			buildPhases = (
+				7832F3012C2C4DC200978EBC /* Sources */,
+				7832F3022C2C4DC200978EBC /* Frameworks */,
+				7832F3032C2C4DC200978EBC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeysExtractor;
+			productName = KeysExtractor;
+			productReference = 7832F3052C2C4DC200978EBC /* KeysExtractor */;
+			productType = "com.apple.product-type.tool";
+		};
+		78E9779F2BF7436E00CACC40 /* StewieMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E977B02BF7436F00CACC40 /* Build configuration list for PBXNativeTarget "StewieMessenger" */;
+			buildPhases = (
+				78E9779C2BF7436E00CACC40 /* Sources */,
+				78E9779D2BF7436E00CACC40 /* Frameworks */,
+				78E9779E2BF7436E00CACC40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StewieMessenger;
+			productName = StewieMessenger;
+			productReference = 78E977A02BF7436E00CACC40 /* StewieMessenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78E977982BF7436E00CACC40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					7832F3042C2C4DC200978EBC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					78E9779F2BF7436E00CACC40 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1530;
+					};
+				};
+			};
+			buildConfigurationList = 78E9779B2BF7436E00CACC40 /* Build configuration list for PBXProject "StewieMessenger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78E977972BF7436E00CACC40;
+			productRefGroup = 78E977A12BF7436E00CACC40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78E9779F2BF7436E00CACC40 /* StewieMessenger */,
+				7832F3042C2C4DC200978EBC /* KeysExtractor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78E9779E2BF7436E00CACC40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7832F30E2C2CAF5C00978EBC /* AppIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7832F3012C2C4DC200978EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7832F3082C2C4DC200978EBC /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E9779C2BF7436E00CACC40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7845E9A52C1073350052FD08 /* Assets.xcassets in Sources */,
+				7845E9A42C1051D20052FD08 /* MessageSenderOC.m in Sources */,
+				7845E99B2C1051BC0052FD08 /* StewieMessengerApp.swift in Sources */,
+				7845E99C2C1051BC0052FD08 /* ContentView.swift in Sources */,
+				7845E99D2C1051BC0052FD08 /* Messages.swift in Sources */,
+				7845E99E2C1051BC0052FD08 /* TestView.swift in Sources */,
+				7845E99F2C1051BC0052FD08 /* Item.swift in Sources */,
+				7845E9A02C1051BC0052FD08 /* MessageSender.swift in Sources */,
+				7845E9A12C1051BC0052FD08 /* TokenFetcher.swift in Sources */,
+				7845E9A22C1051BC0052FD08 /* AppleFindMyController.swift in Sources */,
+				7845E9A32C1051BC0052FD08 /* FindMyFilesController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7832F3092C2C4DC200978EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7832F30A2C2C4DC200978EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		78E977AE2BF7436F00CACC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78E977AF2BF7436F00CACC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78E977B12BF7436F00CACC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = StewieMessenger/StewieMessenger.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StewieMessenger/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Saftelite;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.tu-darmstadt.StewieMessenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "StewieMessenger/StewieMessenger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78E977B22BF7436F00CACC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = StewieMessenger/StewieMessenger.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StewieMessenger/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Saftelite;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.tu-darmstadt.StewieMessenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "StewieMessenger/StewieMessenger-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7832F30B2C2C4DC200978EBC /* Build configuration list for PBXNativeTarget "KeysExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7832F3092C2C4DC200978EBC /* Debug */,
+				7832F30A2C2C4DC200978EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E9779B2BF7436E00CACC40 /* Build configuration list for PBXProject "StewieMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E977AE2BF7436F00CACC40 /* Debug */,
+				78E977AF2BF7436F00CACC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E977B02BF7436F00CACC40 /* Build configuration list for PBXNativeTarget "StewieMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E977B12BF7436F00CACC40 /* Debug */,
+				78E977B22BF7436F00CACC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78E977982BF7436E00CACC40 /* Project object */;
+}

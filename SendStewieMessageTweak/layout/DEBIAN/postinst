@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Kill the seachpartyd to allow the tweak to be loaded 
+killall -9 searchpartyd

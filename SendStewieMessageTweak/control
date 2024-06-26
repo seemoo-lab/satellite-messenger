@@ -1,0 +1,9 @@
+Package: de.tudarmstadt.seemoo.sendstewiemessage
+Name: SendStewieMessage
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Send a custom Satellite text message using Find My
+Maintainer: Jiska Classen
+Author: Jiska Classen
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000) | ellekit (>= 1.0)
