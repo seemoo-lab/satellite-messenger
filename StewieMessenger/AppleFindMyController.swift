@@ -75,7 +75,7 @@ class AppleFindMyController {
             throw KeychainError.keyNotFound(errorCode: Int(status))
         }
 
-        os_log("Entry found for Beacon Store: \n%@", String(describing: entry))
+        os_log("Entry found for Beacon Store: \n%{public}@", String(describing: entry))
         guard let service = entry[kSecAttrService] as? String,
             service == "BeaconStore"
         else {
@@ -127,15 +127,15 @@ class AppleFindMyController {
                         throw FindMyFilesError.plistDecodingFailed
                     }
                     //Log contents of the plist
-                    os_log("Decrypted plist at %@", String(describing: recordURL))
-                    os_log("Contents:\n%@", String(describing: plist))
+                    os_log("Decrypted plist at %{public}@", String(describing: recordURL))
+                    os_log("Contents:\n%{public}@", String(describing: plist))
                     
                     let pathComponents = recordURL.pathComponents
                     let plistName = "\(pathComponents[pathComponents.count-2])/\(pathComponents.last!)"
                     decryptedPlists[plistName] = plist
                     
                 }catch {
-                    os_log("Failed decrypting record %@", pathnameURL.absoluteString)
+                    os_log("Failed decrypting record %{public}@", pathnameURL.absoluteString)
                 }
             }
         }
@@ -170,13 +170,6 @@ class AppleFindMyController {
             return nil
         }
         
-        guard let ownerHandle = plist["ownerHandle"] as? [String: Any],
-              let destination = ownerHandle["destination"] as? String else {
-            return nil
-        }
-        var appleId = String(destination.split(separator: "/").last ?? "No Apple ID")
-        appleId = appleId.replacingOccurrences(of: "mailto:", with: "")
-        appleId = appleId.replacingOccurrences(of: "tel:", with: "")
         
         guard let advertisedLocationId = plist["advertisedLocationId"] as? [String: Any],
               let locationIdKey = advertisedLocationId["key"] as? [String: Any],
@@ -188,6 +181,16 @@ class AppleFindMyController {
         
         guard let findMydId = plist["findMyId"] as? String else {
             return nil
+        }
+        
+        var appleId: String = "Unknown user"
+        
+        if  let ownerHandle = plist["ownerHandle"] as? [String: Any],
+              let destination = ownerHandle["destination"] as? String {
+         
+            appleId = String(destination.split(separator: "/").last ?? "No Apple ID")
+            appleId = appleId.replacingOccurrences(of: "mailto:", with: "")
+            appleId = appleId.replacingOccurrences(of: "tel:", with: "")
         }
         
         return FindMyFriendsInfo(findMyId: findMydId, locationIds: [locationId], decryptionKeys: [keyData], appleId: appleId)
@@ -233,11 +236,11 @@ class AppleFindMyController {
         
         request.addValue("<iPhone10,4> <iPhone OS;16.6;20G75> <com.apple.AuthKit/1 (com.apple.icloud.searchpartyd/1.0)>", forHTTPHeaderField: "X-MME-CLIENT-INFO")
         
-        os_log(.debug, "Created request for fetching location %@", request.debugDescription)
+        os_log(.debug, "Created request for fetching location %{public}@", request.debugDescription)
         
         let (data, response) = try await URLSession.shared.data(for: request)
         
-        os_log(.debug, "Received response for location\nResponse:\n%@\n\nBody:\n%@", response.debugDescription, String(data: data, encoding: .utf8) ?? "Decoding failed")
+        os_log(.debug, "Received response for location\nResponse:\n%{public}@\n\nBody:\n%{public}@", response.debugDescription, String(data: data, encoding: .utf8) ?? "Decoding failed")
         
         if data.count > 0 {
             let respondeBody = try JSONDecoder().decode(FindMyLocationResponseBody.self, from: data)

@@ -22,7 +22,7 @@ class MessageSender {
     func sendMessage(message: Message) -> MessageSenderError {
         
         let textMessage = message.getText()
-        NSLog("Peparing to send Stewie message: %@", textMessage)
+        NSLog("Peparing to send Stewie message: %{public}@", textMessage)
         
         // Apple now seems to block messages of wrong lengths and if not starting with 0x04 like the encryption key.
         // After the message header, we have 82 bytes, starting with 0x04 = 81 bytes max. message length.
