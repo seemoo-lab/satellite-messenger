@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Saftellite
+message: >-
+  A satellite messenger for iOS which uses Find My location
+  updates to send text messages.
+type: software
+authors:
+  - given-names: Jiska
+    family-names: Classen
+    orcid: 'https://orcid.org/0009-0006-4341-2808'
+    email: jiska.classen@hpi.de
+    affiliation: 'Hasso Plattner Institute, Potsdam, DE'
+  - given-names: Alexander
+    family-names: Heinrich
+    email: aheinrich@seemoo.tu-darmstadt.de
+    affiliation: 'TU Darmstadt, SEEMOO'
+    orcid: 'https://orcid.org/0000-0002-1150-1922'
+repository-code: 'https://github.com/seemoo-lab/satellite-messenger'
+license: GPL-3.0
